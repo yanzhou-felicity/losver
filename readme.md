@@ -1,10 +1,10 @@
-# Line-Level Guided Vulnerability Detection and Classification
+# LOSVER:Line-Level Guided Vulnerability Detection and Classification
 
 This repository contains code and scripts for experiments investigating how line-level modifiability signals improve software vulnerability detection and classification. 
 
 The experiments are based on three widely-used benchmark datasets: **Devign**, **Big-Vul** and **PrimeVul**.
 
-This work is presented in **LOSVER: Line-Level Modifiability Signal-Guided Vulnerability Detection and Classification**, published at ASE 2025.
+This work is presented in **LOSVER: Line-Level Modifiability Signal-Guided Vulnerability Detection and Classification**, awarded **ACM SIGSOFT Distinguished Paper Award** at ASE 2025.
 
 ---
 
@@ -323,3 +323,4 @@ python run_gpt.py
 ## License
 
 This code is for research purposes. The datasets (Devign, Big-Vul, PrimeVul) and UnixCoder model must be used in accordance with their respective licenses and terms of use.
+
