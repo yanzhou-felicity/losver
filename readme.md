@@ -78,7 +78,7 @@ Below are the core commands to reproduce the experiments.
 To train the Weighted Vulnerability Detector/Classifier, include the `--localized_location` argument and set it to the directory of the corresponding localizer.
 
 ### Detection (Devign)
-
+yanzhou command
 ```bash
 python run_line.py   --output_dir ./unix_512_localizer   --model_type roberta   --model_name_or_path ../microsoft/unixcoder-nine   --tokenizer_name ../microsoft/unixcoder-nine   --train_data_file train_unix_512.jsonl   --eval_data_file val_unix_512.jsonl   --test_data_file test_unix_512.jsonl   --block_size 512   --seed 123456   --do_train   --do_test 2>&1 | tee run_line.log
 ```
@@ -331,6 +331,7 @@ python run_gpt.py
 ## License
 
 This code is for research purposes. The datasets (Devign, Big-Vul, PrimeVul) and UnixCoder model must be used in accordance with their respective licenses and terms of use.
+
 
 
 
