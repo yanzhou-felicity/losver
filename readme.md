@@ -79,10 +79,12 @@ To train the Weighted Vulnerability Detector/Classifier, include the `--localize
 
 ### Detection (Devign)
 
+```bash
 python run_line.py   --output_dir ./unix_512_localizer   --model_type roberta   --model_name_or_path ../microsoft/unixcoder-nine   --tokenizer_name ../microsoft/unixcoder-nine   --train_data_file train_unix_512.jsonl   --eval_data_file val_unix_512.jsonl   --test_data_file test_unix_512.jsonl   --block_size 512   --seed 123456   --do_train   --do_test 2>&1 | tee run_line.log
-
+```
+```bash
 python run_weighted.py   --output_dir=./unix_512_detector   --model_type roberta   --model_name_or_path=../microsoft/unixcoder-nine   --tokenizer_name=../microsoft/unixcoder-nine   --localized_location=./unix_512_localizer   --block_size=512   --seed=123456   --do_train   --do_test
-
+```
 
 
 #### 1. Modifiable Line Localizer
@@ -329,5 +331,6 @@ python run_gpt.py
 ## License
 
 This code is for research purposes. The datasets (Devign, Big-Vul, PrimeVul) and UnixCoder model must be used in accordance with their respective licenses and terms of use.
+
 
 
